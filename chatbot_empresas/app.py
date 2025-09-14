@@ -2,7 +2,7 @@ import streamlit as st
 from groq import Groq
 
 # Inicializa el cliente con tu API Key
-client = Groq(api_key="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")
+client = Groq(api_key="TU_API_KEY_AQUI")
 
 st.set_page_config(page_title="Chatbot J", page_icon="🤖")
 st.title("💬 Chatbot de prueba")
@@ -41,3 +41,4 @@ if user_input:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
