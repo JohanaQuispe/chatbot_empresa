@@ -4,7 +4,7 @@ from groq import Groq
 
 # Inicializa el cliente con tu API Key
 api_key = os.getenv("GROQ_API_KEY")
-client = Groq(api_key=api_key)
+client = Groq(api_key)
 
 st.set_page_config(page_title="Chatbot J", page_icon="🤖")
 st.title("💬 Chatbot de prueba")
@@ -43,5 +43,6 @@ if user_input:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
 
 
