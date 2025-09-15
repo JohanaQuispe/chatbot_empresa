@@ -2,7 +2,6 @@ import os
 import streamlit as st
 from groq import Groq
 
-load_dotenv()
 # Inicializa el cliente con tu API Key
 api_key = os.getenv("GROQ_API_KEY")
 client = Groq(api_key=api_key)
@@ -44,4 +43,5 @@ if user_input:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
 
