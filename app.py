@@ -1,5 +1,4 @@
 import os
-from dotenv import load_dotenv
 import streamlit as st
 from groq import Groq
 
@@ -45,3 +44,4 @@ if user_input:
 
     except Exception as e:
         st.error(f"Error: {e}")
+
